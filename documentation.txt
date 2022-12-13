@@ -1,0 +1,19 @@
+How to use module
+
+$config = array(
+    "host" => "smtp.gmail.com",
+    "username" =>'example@gmail.com',
+    "password" =>'PAsword',
+    "sender_address" =>'example@gmail.com',
+    "sender_name" =>'Name',
+);
+
+$email_details = array(
+    "recipient_address" => "example@gmail.com",
+    "subject" => "Enter subject",
+    "body" => "Message to send here",
+    "alt_body" => "alternative message"
+);
+
+sendMail($email_details, $config);
+
